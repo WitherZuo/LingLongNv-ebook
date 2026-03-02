@@ -16,6 +16,7 @@ if (-not (Test-Path .\out)) {
 }
 
 pandoc -o .\out\linglongnv.epub .\book.yaml `
+    --epub-title-page=false `
     --css=.\styles\book.css `
     --epub-embed-font=.\fonts\JingHuaLaoSongTi.woff2 `
     --epub-embed-font=.\fonts\SimHei.woff2 `
