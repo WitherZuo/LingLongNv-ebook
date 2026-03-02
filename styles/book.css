@@ -1,0 +1,58 @@
+@font-face {
+    font-family: 'JingHuaLaoSongTi';
+    src: url('../fonts/JingHuaLaoSongTi.woff2');
+}
+
+@font-face {
+    font-family: 'SimHei';
+    src: url('../fonts/SimHei.woff2');
+}
+
+* {
+    font-family: 'JingHuaLaoSongTi' !important;
+    box-sizing: border-box;
+    text-autospace: normal;
+}
+
+header {
+    display: none;
+}
+
+h1,
+h2 {
+    font-family: 'SimHei' !important;
+    font-weight: bold;
+    margin: 2.5em 0 2em 0;
+    font-style: italic;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p {
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: 2em;
+    text-spacing-trim: normal;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+hr {
+    display: block;
+    border: none;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+hr::after {
+    content: "***";
+    letter-spacing: 20px;
+    color: inherit;
+}
