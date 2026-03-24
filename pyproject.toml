@@ -1,0 +1,13 @@
+[project]
+name = "linglongnv-ebook"
+version = "0.1.0"
+description = "LingLongNv E-book"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "brotli>=1.2.0",
+    "fonttools>=4.62.1",
+]
