@@ -10,4 +10,8 @@ dependencies = []
 dev = [
     "brotli>=1.2.0",
     "fonttools>=4.62.1",
+    "poethepoet>=0.42.1",
 ]
+
+[tool.poe.tasks]
+makebook = "makebook.py"
