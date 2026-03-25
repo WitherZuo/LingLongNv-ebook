@@ -1,3 +1,4 @@
+/* 定义字体 */
 @font-face {
     font-family: 'JingHuaLaoSongTi';
     src: url('../fonts/JingHuaLaoSongTi.woff2');
@@ -8,32 +9,41 @@
     src: url('../fonts/SimHei.woff2');
 }
 
+@font-face {
+    font-family: 'FangSong';
+    src: url('../fonts/FangSong.woff2');
+}
+
 * {
-    font-family: 'JingHuaLaoSongTi' !important;
+    font-family: 'JingHuaLaoSongTi';
     box-sizing: border-box;
     text-autospace: normal;
 }
 
+/* 不显示 Pandoc 默认的标题 */
 header {
     display: none;
 }
 
+/* 所有标题样式 */
 h1,
 h2 {
     font-family: 'SimHei' !important;
     font-weight: bold;
-    margin: 2.5em 0 2em 0;
-    font-style: italic;
+    margin: 1em 0 2.5em 0;
 }
 
+/* 一级标题样式 */
 h1 {
     font-size: 2em;
 }
 
+/* 二级标题样式 */
 h2 {
     font-size: 1.5em;
 }
 
+/* 正文段落默认样式 */
 p {
     line-height: 1.5;
     text-align: justify;
@@ -43,6 +53,7 @@ p {
     margin-bottom: 0 !important;
 }
 
+/* 章节内分隔符样式 */
 hr {
     display: block;
     border: none;
@@ -55,4 +66,14 @@ hr::after {
     content: "***";
     letter-spacing: 20px;
     color: inherit;
+}
+
+/* 诗歌样式 */
+div.poem {
+    margin: 20px 0 20px 40px;
+}
+
+div.poem p {
+    font-family: 'FangSong' !important;
+    text-indent: 0;
 }
