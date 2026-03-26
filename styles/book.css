@@ -77,3 +77,23 @@ div.poem p {
     font-family: 'FangSong' !important;
     text-indent: 0;
 }
+
+section#扉言 {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+section#扉言 h1 {
+    display: none;
+}
+
+section#扉言 div.poem {
+    margin: 0;
+}
+
+section#扉言 p {
+    font-size: 1.5em;
+    text-indent: 0;
+}
